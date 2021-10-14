@@ -57,6 +57,7 @@
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/yellow_forest"
+        android:textColor="@color/brown_forest"
         />
 
 
