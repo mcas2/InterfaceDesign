@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:backgroundTint">@color/yellow_forest</item>
+        <item name="android:textColor">@color/brown_forest</item>
+    </style>
+
+    <style name="myButton2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!--Hay colores propios de Android que no están en en el colors.xml
+        Esos colores se llaman como @android:color/loquesea. Para transparent.-->
+        <item name="android:textColor">@color/yellow_forest</item>
+    </style>
+</resources>
