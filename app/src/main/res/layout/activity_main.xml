@@ -85,7 +85,8 @@
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         android:textSize="16sp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        text/>
 
     <ImageView
         android:id="@+id/imageView2"

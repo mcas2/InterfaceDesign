@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">InterfaceDesign</string>
-    <string name="password_string">Contraseña</string>
-    <string name="entrar_button">Entrar</string>
-    <string name="register_banner_string">¿Tienes una cuenta? Regístrate.</string>
-    <string name="username_string">Nombre de usuario</string>
+    <string name="password_string">Password</string>
+    <string name="entrar_button">LOGIN</string>
+    <string name="register_banner_string">Sign in</string>
+    <string name="username_string">Username</string>
 </resources>
