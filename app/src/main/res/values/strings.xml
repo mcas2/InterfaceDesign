@@ -2,7 +2,7 @@
     <string name="app_name">InterfaceDesign</string>
     <string name="password_string">Password</string>
     <string name="entrar_button">Entrar</string>
-    <string name="register_banner_string">Sign in</string>
+    <string name="app_slogan">Interface Design by Mario Castro</string>
     <string name="username_string">Username</string>
     <string name="registro_string">Registrarse</string>
 </resources>

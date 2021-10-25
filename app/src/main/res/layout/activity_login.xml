@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/pinos">
+        android:id="@+id/pinos">
     </ImageView>
 
     <View
@@ -18,7 +18,6 @@
         android:layout_height="match_parent"
         android:alpha="0.4"
         android:background="@drawable/gradient">
-
     </View>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -67,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/button_custom"
-        android:onClick="onClick"
+        android:onClick="openMain"
         android:text="@string/entrar_button"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
@@ -81,6 +80,7 @@
         app:layout_constraintTop_toBottomOf="@id/entrar"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:onClick="openSignUp"
         />
 
     <androidx.constraintlayout.widget.Guideline
@@ -101,7 +101,7 @@
         android:id="@+id/register_banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register_banner_string"
+        android:text="@string/app_slogan"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/registro"
         app:layout_constraintStart_toStartOf="@id/guideline1"
