@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">InterfaceDesign</string>
     <string name="password_string">Password</string>
+    <string name="repeat_password_string">Repeat password</string>
+    <string name="email_string">Email</string>
     <string name="entrar_button">Entrar</string>
     <string name="app_slogan">Interface Design by Mario Castro</string>
     <string name="username_string">Username</string>

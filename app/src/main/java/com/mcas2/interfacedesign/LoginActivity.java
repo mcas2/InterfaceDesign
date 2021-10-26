@@ -17,13 +17,13 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        ImageView landscapeLogin = findViewById(R.id.pinos);
+        ImageView landscapeLogin = findViewById(R.id.trees1);
 
         Glide.with(this)
-                .load(R.drawable.pinos)
+                .load(R.drawable.trees1)
                 //.load("https://sunbikes.es/wp-content/uploads/2018/02/Pico-del-Calamorro-vistas.jpg")
                 //IMPORTANTE para cargar imágenes de internet
-                .transition(DrawableTransitionOptions.withCrossFade(400))
+                //.transition(DrawableTransitionOptions.withCrossFade(400))
                 .centerCrop()
                 //.placeholder(new ColorDrawable(this.getResources().getColor(R.color.yellow_forest)))
                 //Para cuando no carga la imagen

@@ -10,5 +10,6 @@
     <color name="green_forest">#50CC64</color>
     <color name="yellow_forest">#FBD129</color>
     <color name="brown_forest">#AA5504</color>
-    <color name="green_deep">#095817</color>
+    <color name="green_deep">#00A51D</color>
+    <color name="light_blue">#004043</color>
 </resources>

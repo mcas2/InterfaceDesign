@@ -2,18 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/gradient"
-    android:alpha="0.4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash_Screen">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@drawable/gradient">
+    </View>
 
     <ImageView
         android:src="@mipmap/trees_foreground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:onClick="openLogin"
         >
-
     </ImageView>
 
 
