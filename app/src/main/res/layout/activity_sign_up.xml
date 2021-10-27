@@ -106,7 +106,9 @@
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/email"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/button_custom"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -144,5 +146,19 @@
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/catamaran"
+        android:text="Grasshopper"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/light_blue"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2">
+
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

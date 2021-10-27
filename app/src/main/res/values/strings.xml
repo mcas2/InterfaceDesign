@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">InterfaceDesign</string>
+    <string name="app_name">Grasshopper</string>
     <string name="password_string">Password</string>
     <string name="repeat_password_string">Repeat password</string>
     <string name="email_string">Email</string>
