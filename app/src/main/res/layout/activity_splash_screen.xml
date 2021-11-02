@@ -6,16 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Splash_Screen">
 
+
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0.4"
+        android:alpha="0.8"
         android:background="@drawable/gradient"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="0dp">
 
     </View>
+
+    <ImageView
+        android:id="@+id/backgroundSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ImageView>
 
     <ImageView
         android:id="@+id/splash_boot"
@@ -24,8 +32,7 @@
         android:src="@drawable/boot"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent">
 
     </ImageView>
 
@@ -33,17 +40,24 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/catamaran"
         android:text="Grasshopper"
-        android:layout_marginTop="8dp"
         android:textColor="@color/light_blue"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/h1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        >
 
     </TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
