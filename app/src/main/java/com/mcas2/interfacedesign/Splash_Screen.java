@@ -24,7 +24,7 @@ public class Splash_Screen extends AppCompatActivity {
 
         //ANIMACIÓN
         ImageView boot = findViewById(R.id.splash_boot);
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.movement);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.gradient_colour);
         boot.startAnimation(myanim);
 
 
