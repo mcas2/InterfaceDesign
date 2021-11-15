@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fav_appbar"
+        android:title="Favorite"
+        android:icon="@drawable/fav_appbar_logo"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/search_appbar"
+        android:icon="@drawable/search_appbar_logo"
+        android:title="Search"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/display_appbar"
+        android:icon="@drawable/display_appbar_logo"
+        android:title="Display"
+        app:showAsAction="always"
+        />
+</menu>
