@@ -43,7 +43,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/catamaran"
         android:text="Grasshopper"
-        android:textColor="@color/light_blue"
+        android:textColor="@color/dark_blue"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/h1"
         app:layout_constraintEnd_toEndOf="parent"

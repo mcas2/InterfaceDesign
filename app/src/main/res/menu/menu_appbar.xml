@@ -5,21 +5,25 @@
     <item
         android:id="@+id/fav_appbar"
         android:title="Favorite"
-        android:icon="@drawable/fav_appbar_logo"
+        android:icon="@drawable/fav_appbar_logo_svg"
         app:showAsAction="always"
         />
 
     <item
         android:id="@+id/search_appbar"
-        android:icon="@drawable/search_appbar_logo"
+        android:icon="@drawable/search_appbar_logo_svg"
         android:title="Search"
         app:showAsAction="always"
         />
 
     <item
-        android:id="@+id/display_appbar"
-        android:icon="@drawable/display_appbar_logo"
-        android:title="Display"
-        app:showAsAction="always"
+        android:id="@+id/info_appbar"
+        android:title="Sobre nosotros"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/warning_appbar"
+        android:title="Avisar de problemas"
+        app:showAsAction="never"
         />
 </menu>

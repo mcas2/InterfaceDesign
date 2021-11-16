@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 <item
     android:id="@+id/copy_context"
-    android:title="Copy"
+    android:title="Copiar enlace"
     app:showAsAction="ifRoom"
     /> <!--ifRoom: si hay huevo lo coloca. Si no, no.-->
 <item
     android:id="@+id/download_context"
-    android:title="Download"
+    android:title="Descargar ruta"
     app:showAsAction="ifRoom"
     />
 

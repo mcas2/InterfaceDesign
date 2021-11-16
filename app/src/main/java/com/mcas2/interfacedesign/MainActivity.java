@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         getMenuInflater().inflate(R.menu.menu_context, menu);
-    }
+    } //Este menú es contextual para pulsar y que aparezca.
 
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
@@ -41,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 ConstraintLayout mLayaut = findViewById(R.id.activity_main_constraint);
 
                 Snackbar snackbar = Snackbar
-                        .make(mLayaut, "Ten cuidado que estás descargando", Snackbar.LENGTH_LONG)
+                        .make(mLayaut, "Atención: descarga en curso.", Snackbar.LENGTH_LONG)
                         .setAction("Deshacer", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
                                 Snackbar snackbar_undo = Snackbar.make(mLayaut,
-                                        "Deshecho", Snackbar.LENGTH_LONG);
+                                        "Descarga cancelada.", Snackbar.LENGTH_LONG);
                                 snackbar_undo.show();
                             }
                         });
@@ -61,5 +62,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) { //Este menú aparece arriba.
+        getMenuInflater().inflate(R.menu.menu_appbar, menu);
+        return true;
+    }
 }
