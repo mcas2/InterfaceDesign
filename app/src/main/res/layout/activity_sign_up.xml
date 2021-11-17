@@ -102,13 +102,14 @@
         android:id="@+id/registro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_custom"
         android:text="@string/registro_string"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/email"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
-        android:backgroundTint="@color/button_custom"/>
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
