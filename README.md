@@ -5,6 +5,7 @@ Este proyecto es el primer tutorial que hemos seguido para aprender diseño de i
 Android Studio. Considero que la mejor forma de explicar su proceso de creación consiste en
 seguir la división interna del proyecto, que ha sido también el flujo de aprendizaje. 
 Aquí podemos ver la **estructura del proyecto**.
+
 ![issue tab](img/estructura.png)
 
 0. [Introducción]
@@ -23,15 +24,18 @@ dirigimos el flujo de la aplicación.
 2. [Java y Res: Layout]
 En la carpeta de Java tenemos el desarrollo por programación de las activities. Tenemos la
 **Splash Screen**, que es la ventana de recibimiento con el logo y una imagen de la montaña.
+
 ![issue tab](img/splash.png)
 
 Desde la Splash Screen se accede automáticamente al **Login**, organizado de forma clásica con 
 un espacio para el nombre de usuario y uno para la contraseña.
+
 ![issue tab](img/login.png)
 
 Desde el Login podemos acceder al **Signup** mediante el botón de Registrarse. La pantalla de 
 registro es similar a la del login pero con los espacios necesarios (EditText) para introducir
 datos de registro. 
+
 ![issue tab](img/signup.png)
 
 Una vez realizado el log in, accedemos al Main, donde estaría desarrollada la aplicación, en 
