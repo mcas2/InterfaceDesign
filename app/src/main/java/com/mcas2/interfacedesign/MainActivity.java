@@ -3,27 +3,53 @@ package com.mcas2.interfacedesign;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
+    private SwipeRefreshLayout swipeLayout;
+    private WebView myWebVisor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView mainContext = (TextView) findViewById(R.id.textTap);
-        registerForContextMenu(mainContext);
+        //TextView mainContext = (TextView) findViewById(R.id.textTap);
+        //registerForContextMenu(myWebVisor);
+
+        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipeExample);
+        swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+        myWebVisor = (WebView) findViewById(R.id.myWebVisor);
+
+        myWebVisor.getSettings().setBuiltInZoomControls(true);
+        myWebVisor.loadUrl("https://thispersondoesnotexist.com");
+
     }
+
+    protected SwipeRefreshLayout.OnRefreshListener
+        mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
+
+        @Override
+        public void onRefresh() {
+            Toast toast0 = Toast.makeText(MainActivity.this, "Look at this not existent person", Toast.LENGTH_LONG);
+            toast0.show();
+
+            swipeLayout.setRefreshing(false);
+            myWebVisor.reload();
+        }
+    };
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
