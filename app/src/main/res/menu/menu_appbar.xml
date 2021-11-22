@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fav_appbar"
+        android:title="Favorite"
+        android:icon="@drawable/fav_appbar_logo_svg"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/search_appbar"
+        android:icon="@drawable/search_appbar_logo_svg"
+        android:title="Search"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/info_appbar"
+        android:title="Sobre nosotros"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/warning_appbar"
+        android:title="Avisar de problemas"
+        app:showAsAction="never"
+        />
+</menu>

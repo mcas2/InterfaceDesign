@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/copy_context"
+    android:title="Copiar enlace"
+    app:showAsAction="ifRoom"
+    /> <!--ifRoom: si hay huevo lo coloca. Si no, no.-->
+<item
+    android:id="@+id/download_context"
+    android:title="Descargar ruta"
+    app:showAsAction="ifRoom"
+    />
+
+</menu>

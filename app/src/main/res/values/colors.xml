@@ -11,5 +11,8 @@
     <color name="yellow_forest">#FBD129</color>
     <color name="brown_forest">#AA5504</color>
     <color name="green_deep">#00A51D</color>
-    <color name="light_blue">#004043</color>
+    <color name="dark_blue">#004043</color>
+    <color name="medium_blue">#399191</color>
+    <color name="soft_blue">#88bdbd</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>
