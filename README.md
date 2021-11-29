@@ -8,22 +8,23 @@ Aquí podemos ver la **estructura del proyecto**.
 
 ![issue tab](img/estructura.png)
 
-0. [Introducción]
-Me ha parecido interesante escoger una gama de colores azulados, con destacados amarillos y
-vivos en una temática que se puede asociar rápidamente con una aplicación de senderismo o de
-temática campestre. Colores fríos con imágenes de paisajes que recuerden a la montaña.
+## *Introducción*
+*Grasshopper* simula una aplicación de rutas y senderismo, similar a algunos ejemplos reales como Wikiloc.
+Sin romper con la temática agreste pero huyendo del cliché del color verde para temas naturales, me ha parecido interesante escoger una gama de colores azulados, con destacados de un amarillo vivo que se pueden asociar rápidamente con la alta montaña gracias a la imagen de fondo de la aplicación y al splash screen.
+
+En este caso, los colores fríos resultan menos agresivos y resultan ideales para ocupar los espacios principales de la aplicación.
 
 El logo y el nombre de la aplicación afirman y apuntalan esta idea: una bota en svg como logo
 y de nombre "Grasshopper", o saltamontes en español.
 
-1. [Manifest]
-En el AndroidManifest, documento xml, es en el lugar en el que declaramos la existencia de 
-Activities y decidimos por cuál de ellas va a comenzar la aplicación al abrirse. Desde ahí
+## 1. *Android Manifest*
+El documento xml *AndroidManifest*, uno de los ejes fundamentales de cualquier aplicación *android*, es en el lugar en el que declaramos la existencia de *Activities* y decidimos por cuál de ellas va a comenzar la aplicación al abrirse. Desde ahí
 dirigimos el flujo de la aplicación.
 
-2. [Java y Res: Layout]
-En la carpeta de Java tenemos el desarrollo por programación de las activities. Tenemos la
-**Splash Screen**, que es la ventana de recibimiento con el logo y una imagen de la montaña.
+## 2. *Java* y *Res*: *Layout*
+En la carpeta Java podemos encontrar las clases en las que programamos las tareas de las ventanas.
+
+Lo primero que nos encontramos es la *Splash Screen*, que es la ventana de recibimiento con el logo y una imagen de montañas, que va a marcar  las directrices cromáticas    del resto de la aplicación.
 
 ![issue tab](img/splash.png)
 
