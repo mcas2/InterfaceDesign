@@ -17,7 +17,7 @@ En este caso, los colores fríos resultan menos agresivos y resultan ideales par
 El logo y el nombre de la aplicación afirman y apuntalan esta idea: una bota en svg como logo
 y de nombre "Grasshopper", o saltamontes en español.
 
-[!issue tab](img/Grasshoper-demo.gif)
+![issue tab](img/Grasshoper-demo.gif)
 
 ## 1. *Android Manifest*
 El documento xml *AndroidManifest*, uno de los ejes fundamentales de cualquier aplicación *android*, es en el lugar en el que declaramos la existencia de *Activities* y decidimos por cuál de ellas va a comenzar la aplicación al abrirse. Desde ahí
