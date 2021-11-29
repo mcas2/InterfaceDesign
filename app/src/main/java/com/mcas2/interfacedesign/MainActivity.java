@@ -16,9 +16,12 @@ import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout swipeLayout;
     private WebView myWebVisor;
+    private Random r;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,16 +29,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //TextView mainContext = (TextView) findViewById(R.id.textTap);
-        //registerForContextMenu(myWebVisor);
+
 
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipeExample);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
         myWebVisor = (WebView) findViewById(R.id.myWebVisor);
+        registerForContextMenu(myWebVisor);
 
         myWebVisor.getSettings().setBuiltInZoomControls(true);
-        myWebVisor.loadUrl("https://thispersondoesnotexist.com");
-
+        myWebVisor.loadUrl("https://thisartworkdoesnotexist.com/");
     }
 
     protected SwipeRefreshLayout.OnRefreshListener
@@ -43,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onRefresh() {
-            Toast toast0 = Toast.makeText(MainActivity.this, "Look at this not existent person", Toast.LENGTH_LONG);
+            Toast toast0 = Toast.makeText(MainActivity.this, "Soy una obra de arte autogenerada.", Toast.LENGTH_LONG);
             toast0.show();
 
             swipeLayout.setRefreshing(false);
