@@ -52,4 +52,10 @@ En el Layout encontramos lo que probablemente sea la parte más importante del d
 ### 3.2. *Drawable* y *mipmap*
 En estas carpetas encontramos las imágenes y los diseños vectoriales que se utilizan en nuestra aplicación, tanto en el logo como en las activities. En nuestro caso, por ejemplo, podemos encontrar los iconos con los svg del logo de la bota en mipmap y el propio logo en drawable.
 ### 3.3. Añadidos
-Para muchas funcionalidades, Android Studio necesita que creemos nuevas carpetas de recursos,  como es el caso de la introduccion fuentes nuevas (font de tipo font) o el caso de las animaciones (anim/anim).
+Para muchas funcionalidades, Android Studio necesita que creemos nuevas carpetas de recursos. En nuestro caso hemos añadido fuentes personalizadas y, por tanto, hemos creado una carpeta llamada **font** de tipo *font*. También es el caso de las animaciones (anim/anim).
+
+El añadido de mayor importancia es la carpeta *menu*, con los archivos menu_appbar.xml y menu_context.xml. La *appbar* es la barra superior en la que nos encontramos con diferentes acciones, como por ejemplo el icono de favorito o de búsqueda. En cada elemento podemos seleccionar si deseamos que se muestr completamente, siempre o nunca (en cuyo caso apareceran tres puntos que nos permitirán acceder a un desplegable). El *context menu* es el menú que aparece al mantener pulsado sobre el elemento que queremos desarrollar.
+
+Todo esto se muestra en el gif de la introducción.
+
+## 4. *Programación*
