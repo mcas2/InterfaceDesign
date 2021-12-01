@@ -15,4 +15,5 @@
     <color name="medium_blue">#399191</color>
     <color name="soft_blue">#88bdbd</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="soft_red">#AA3939</color>
 </resources>

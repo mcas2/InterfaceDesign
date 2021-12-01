@@ -24,7 +24,7 @@ En el siguiente gif podemos ver la ejecución de la aplicación desde que la abr
 
 ## 1. *Android Manifest*
 El documento xml *AndroidManifest*, uno de los ejes fundamentales de cualquier aplicación *android*, es el lugar en el que declaramos la existencia de *Activities* y decidimos cuál de ellas va a iniciar la aplicación. Desde ahí
-dirigimos el flujo del programa.
+dirigimos el flujo del programa. Con los *intent filter* decidimos el inicio, y con los *parent activity name* decidimos si esa escena tendrá una que la contenga y a la que se pueda volver desde el menú.
 
 ## 2. *Java* y *Res*: *Layout*
 En la carpeta Java podemos encontrar las clases en las que programamos las tareas de las ventanas.
@@ -59,3 +59,20 @@ El añadido de mayor importancia es la carpeta *menu*, con los archivos menu_app
 Todo esto se muestra en el gif de la introducción.
 
 ## 4. *Programación*
+### SplashScreen
+Nuestra Splash Screen tiene 3 bloques, uno para la animación para el que utilizamos la clase Animation, otro para el fondo con Glide en el que cargamos una imagen de [unsplash](https://images.unsplash.com/photo-1580436541340-36b8d0c60bae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=388&q=80) y un método openApp desde el que marcamos el *delay* con el tiempo para la introducción y en el que dejamos claro que no se puede volver a esta *activity* desde la aplicación.
+
+### LoginActivity
+En el Login Activity tenemos otros 4 bloques. Un Glide similar al previo pero que carga una imagen local y dos métodos derivados de onclicks del layout para avanzar al Main o al Sign Up. En el openMain, para impedir la vuelta atrás utilizamos las siguientes flags:
+
+    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+### SignUp
+
+
+### MainActivity
+
+
+
+
