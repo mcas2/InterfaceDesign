@@ -1,5 +1,5 @@
 # Interface Design -  First
-## Mario Castro Vélez
+## Mario Castro
 
 Este proyecto es el primer tutorial que hemos seguido para aprender diseño de interfaces en
 Android Studio. Probablemente la mejor forma de explicar su proceso de creación consista en
@@ -31,23 +31,25 @@ En la carpeta Java podemos encontrar las clases en las que programamos las tarea
 
 Lo primero que nos encontramos es la *Splash Screen*, que es la ventana de recibimiento con el logo y una imagen de montañas, que va a marcar  las directrices cromáticas    del resto de la aplicación.
 La siguiente imagen sirve para identificar los colores principales de la app en función a la splash screen.
-![issue tab](img/gama_cromatica.png)
+
+<img src="img/gama_cromatica.png" border="1px solid black" width="400"/>
 
 Desde la Splash Screen se accede automáticamente al **Login**, organizado de forma clásica con 
 un espacio para el nombre de usuario y uno para la contraseña.
 
 Desde el Login podemos acceder al **Signup** mediante el botón de Registrarse. La pantalla de 
 registro es similar a la del login pero con los espacios necesarios (EditText) para introducir
-datos de registro. 
+datos del registro.
 
-Una vez realizado el log in, accedemos al Main, donde estaría desarrollada la aplicación, en 
-este caso una app hipotética.
+Una vez el usuario accede a su cuenta pasamos a la *Main Activity*, donde estaría desarrollada la aplicación, en
+este caso algo sin relación: una recarga constante de un *WebView* con imágenes de obras de arte autogeneradas.
 
 
 ## 3. *Resources*
+Dentro de la carpeta *res* nos encontramos con, como su propio nombre indica, los recursos necesarios para el funcionamiento de la aplicación organizados en directorios y archivos xml. Cada uno de estos se encarga de diversas funciones que pueden ser añadidas y mejoradas.
 ### 3.1. *Layout*
 En el Layout encontramos lo que probablemente sea la parte más importante del desarrollo de interfaces: los xml donde decidimos qué objetos vemos, su jerarquía, cómo se llaman para su desarrollo en el código, su aspecto y apariencia, etc. Aquí, cada xml es un activity.
 ### 3.2. *Drawable* y *mipmap*
-En estas carpetas encontramos las imágenes y los diseños vectoriales que se utilizan en nuestra aplicación, tanto en el logo como en las activities.
+En estas carpetas encontramos las imágenes y los diseños vectoriales que se utilizan en nuestra aplicación, tanto en el logo como en las activities. En nuestro caso, por ejemplo, podemos encontrar los iconos con los svg del logo de la bota en mipmap y el propio logo en drawable.
 ### 3.3. Añadidos
-Podemos crear carpetas de recursos nuevas para añadir algunos detalles personalizados,  como es el caso de las fuentes nuevas (font de tipo font) o el caso de las animaciones (anim/anim).
+Para muchas funcionalidades, Android Studio necesita que creemos nuevas carpetas de recursos,  como es el caso de la introduccion fuentes nuevas (font de tipo font) o el caso de las animaciones (anim/anim).
