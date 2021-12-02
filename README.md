@@ -81,3 +81,4 @@ La mayor parte del código de la aplicación se encuentra en el *Main*. Tenemos 
 
 Desarrollamos dos métodos para que se muestren los cuadros de alerta, el *showAlertDialogButtonClicked* y el *onOptionsItemSelected*. También también tenemos varios Toast y un Snackbar.
 
+Para cualquier duda creen un pull request. Gracias.
