@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/info_appbar"
-        android:title="Sobre nosotros"
+        android:title="Cambia de sesión"
         app:showAsAction="never"
         />
     <item

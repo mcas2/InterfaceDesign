@@ -94,6 +94,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {//Gestiona las acciones sobre los botones
+        int id = item.getItemId();
+        if (id == R.id.search_appbar) {
+            Toast toast = Toast.makeText(this, "Busca en otro momento", Toast.LENGTH_LONG);
+            toast.show();
+        }
+        if (id == R.id.fav_appbar) {
+            Toast toast = Toast.makeText(this, "¡Me gusta esta obra!", Toast.LENGTH_LONG);
+            toast.show();
+        }
+
+        if (id == R.id.info_appbar) {
+            showAlertDialogButtonClicked(MainActivity.this);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         getMenuInflater().inflate(R.menu.menu_context, menu);
     } //Este menú es contextual para pulsar y que aparezca.
