@@ -62,17 +62,22 @@ Todo esto se muestra en el gif de la introducción.
 ### SplashScreen
 Nuestra Splash Screen tiene 3 bloques, uno para la animación para el que utilizamos la clase Animation, otro para el fondo con Glide en el que cargamos una imagen de [unsplash](https://images.unsplash.com/photo-1580436541340-36b8d0c60bae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=388&q=80) y un método openApp desde el que marcamos el *delay* con el tiempo para la introducción y en el que dejamos claro que no se puede volver a esta *activity* desde la aplicación.
 
-### LoginActivity
+### LoginActivity y SignUp
 En el Login Activity tenemos otros 4 bloques. Un Glide similar al previo pero que carga una imagen local y dos métodos derivados de onclicks del layout para avanzar al Main o al Sign Up. En el openMain, para impedir la vuelta atrás utilizamos las siguientes flags:
 
     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
-### SignUp
-
+En el signup utilizamos de nuevo el Glide.
 
 ### MainActivity
+La mayor parte del código de la aplicación se encuentra en el *Main*. Tenemos un *WebVisor* que nos muestra las imágenes que vienen directamente desde la web.
 
+    myWebVisor = (WebView) findViewById(R.id.myWebVisor);
+    registerForContextMenu(myWebVisor);
 
+    myWebVisor.getSettings().setBuiltInZoomControls(true);
+    myWebVisor.loadUrl("https://thisartworkdoesnotexist.com/");
 
+Desarrollamos dos métodos para que se muestren los cuadros de alerta, el *showAlertDialogButtonClicked* y el *onOptionsItemSelected*. También también tenemos varios Toast y un Snackbar.
 
