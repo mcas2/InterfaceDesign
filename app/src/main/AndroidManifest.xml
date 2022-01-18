@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mcas2.interfacedesign">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,15 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InterfaceDesign">
         <activity
+            android:name=".MainBAP"
+            android:exported="false" />
+        <activity
             android:name=".SignUp"
             android:exported="true"
-            android:parentActivityName=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".Splash_Screen"
             android:exported="true"
             android:theme="@style/NoActionTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,8 +34,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:theme="@style/NoActionTheme">
-        </activity>
+            android:theme="@style/NoActionTheme"></activity>
     </application>
 
 </manifest>

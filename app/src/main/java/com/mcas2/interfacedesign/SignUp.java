@@ -2,7 +2,9 @@ package com.mcas2.interfacedesign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -26,5 +28,10 @@ public class SignUp extends AppCompatActivity {
                 //.placeholder(new ColorDrawable(this.getResources().getColor(R.color.yellow_forest)))
                 //Para cuando no carga la imagen
                 .into(landscapeLogin);
+    }
+
+    public void openAppBar(View view) {
+        Intent intent = new Intent(SignUp.this, MainBAP.class);
+        startActivity(intent);
     }
 }

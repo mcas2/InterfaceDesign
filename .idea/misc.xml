@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.19270833333333334" />
         <entry key="..\:/Rodrigo y Mario/InterfaceDesign/app/src/main/res/layout/activity_login.xml" value="0.2957427536231884" />
         <entry key="app/src/main/res/drawable/boot.xml" value="0.18385416666666668" />
         <entry key="app/src/main/res/drawable/boot_icon_background.xml" value="0.20885416666666667" />
@@ -18,10 +19,12 @@
         <entry key="app/src/main/res/drawable/persona_foreground.xml" value="0.20885416666666667" />
         <entry key="app/src/main/res/drawable/search_appbar_logo_svg.xml" value="0.20885416666666667" />
         <entry key="app/src/main/res/drawable/trees_background.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/layout/activity_bottom_app_bar.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
+        <entry key="app/src/main/res/menu/menu_app_bottom_bar.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu_appbar.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu_context.xml" value="0.22" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20885416666666667" />
