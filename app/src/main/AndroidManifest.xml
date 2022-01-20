@@ -12,7 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InterfaceDesign">
         <activity
-            android:name=".MainBAP"
+            android:name=".MainBN"
+            android:exported="false"
+            android:label="@string/title_activity_main_bn"
+            android:theme="@style/Theme.InterfaceDesign.NoActionBar" />
+        <activity
+            android:name=".MainBAB"
             android:exported="false" />
         <activity
             android:name=".SignUp"
@@ -24,7 +29,6 @@
             android:theme="@style/NoActionTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -34,7 +38,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:theme="@style/NoActionTheme"></activity>
+            android:theme="@style/NoActionTheme" />
     </application>
 
 </manifest>

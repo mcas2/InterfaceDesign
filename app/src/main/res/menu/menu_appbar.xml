@@ -17,13 +17,13 @@
         />
 
     <item
-        android:id="@+id/info_appbar"
-        android:title="Cambia de sesión"
+        android:id="@+id/open_bab"
+        android:title="Open Bottom App Bar"
         app:showAsAction="never"
         />
     <item
-        android:id="@+id/warning_appbar"
-        android:title="Avisar de problemas"
+        android:id="@+id/open_bn"
+        android:title="Open Bottom Navigation"
         app:showAsAction="never"
         />
 </menu>

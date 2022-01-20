@@ -15,6 +15,7 @@
         <!-- Customize your theme here. -->
         <item name="actionBarStyle">@style/myActionBar</item>
     </style>
+
     <style name="myActionBar" parent="Widget.MaterialComponents.Light.ActionBar.Solid">
         <!--Esto es una forma de personalizar la action bar sin tocar el resto de parámetros.-->
     </style>
@@ -23,4 +24,13 @@
     <style name="NoActionTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
 
     </style>
+
+    <style name="Theme.InterfaceDesign.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.InterfaceDesign.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.InterfaceDesign.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

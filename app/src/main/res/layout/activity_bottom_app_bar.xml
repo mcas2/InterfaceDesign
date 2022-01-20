@@ -38,8 +38,6 @@
             app:navigationIcon="@drawable/ic_menu_lines"
 
             />
-        <!--            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"-->
-
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"

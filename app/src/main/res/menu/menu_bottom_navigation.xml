@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/heart"
+        android:title="Settings"
+        android:icon="@drawable/ic_love"
+        android:contentDescription="none"
+        app:showAsAction="always"
+        >
+    </item>
+
+    <item
+        android:id="@+id/search"
+        android:title="Language"
+        android:icon="@drawable/ic_planet"
+        app:showAsAction="always"
+        >
+    </item>
+
+    <item
+        android:id="@+id/sad"
+        android:title="Sad"
+        android:icon="@drawable/ic_sadface"
+        app:showAsAction="always"
+        >
+    </item>
+
+    <item
+        android:id="@+id/booticon"
+        android:title="Bota"
+        android:icon="@drawable/ic_boot_foreground"
+        app:showAsAction="always"
+        >
+    </item>
+</menu>

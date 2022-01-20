@@ -14,7 +14,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -105,8 +104,14 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
 
-        if (id == R.id.info_appbar) {
-            showAlertDialogButtonClicked(MainActivity.this);
+        if (id == R.id.open_bab) {
+            Intent intent = new Intent(MainActivity.this, MainBAB.class);
+            startActivity(intent);
+        }
+
+        if (id == R.id.open_bn) {
+            Intent intent = new Intent(MainActivity.this, MainBN.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

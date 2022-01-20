@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class SignUp extends AppCompatActivity {
 
@@ -31,7 +30,7 @@ public class SignUp extends AppCompatActivity {
     }
 
     public void openAppBar(View view) {
-        Intent intent = new Intent(SignUp.this, MainBAP.class);
+        Intent intent = new Intent(SignUp.this, MainBAB.class);
         startActivity(intent);
     }
 }
