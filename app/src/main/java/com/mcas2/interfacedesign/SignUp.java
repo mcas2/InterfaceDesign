@@ -33,4 +33,5 @@ public class SignUp extends AppCompatActivity {
         Intent intent = new Intent(SignUp.this, MainBAB.class);
         startActivity(intent);
     }
+
 }
